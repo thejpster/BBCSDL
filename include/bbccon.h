@@ -13,6 +13,8 @@
 #ifdef PICO
 #define ACCSLEN 1024  // Must be the same in bbcsdl.h and bbccon.h
 #define DEFAULT_RAM PAGE_OFFSET+0x20000 // Initial amount of RAM to allocate
+#elif defined(NEOTRON)
+#define ACCSLEN 1024  // Must be the same in bbcsdl.h and bbccon.h
 #else
 #define ACCSLEN 65536 // Must be the same in bbcsdl.h and bbccon.h
 #define DEFAULT_RAM PAGE_OFFSET+0x200000 // Initial amount of RAM to allocate

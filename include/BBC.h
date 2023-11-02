@@ -11,6 +11,8 @@
 #ifdef PICO
 extern void *libtop;
 #define ACCSLEN 1024  // Must be the same in bbcsdl.h and bbccon.h
+#elif defined(NEOTRON)
+#define ACCSLEN 1024  // Must be the same in bbcsdl.h and bbccon.h
 #else
 #define ACCSLEN 65536 // Must be the same in bbcsdl.h and bbccon.h
 #endif
